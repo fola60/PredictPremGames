@@ -24,21 +24,7 @@ rf.fit(X_train,y_train)
 y_pred = rf.predict(X_test)
 
 score = rf.score(X_test,y_test)
-"""
-print(score)
 
-for i, column in enumerate(y.columns):
-    print(f"Classification Report for {column}:")
-    print(classification_report(y_test.iloc[:, i], y_pred[:, i]))
-    print("\n")
-
-for i, estimator in enumerate(rf.estimators_):
-    importances = estimator.feature_importances_
-    feature_importances = pd.DataFrame(importances, index=X.columns, columns=[f'Classifier {i}'])
-    print(f"Feature Importances for Classifier {i}:")
-    print(feature_importances.sort_values(by=f'Classifier {i}', ascending=False))
-    print("\n")
-"""
 
 for year in years:
     team_names = [k for k,v in team_data_per_year[year].items()]
