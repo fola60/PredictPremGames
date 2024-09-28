@@ -29,7 +29,7 @@ score = rf.score(X_test,y_test)
 for year in years:
     team_names = [k for k,v in team_data_per_year[year].items()]
 
-home_team_name = "Chelsea"
+home_team_name = "Chelsea" 
 away_team_name = "Manchester Utd"
 
 team_home_data = team_data_per_year["2025"][home_team_name]
@@ -39,7 +39,7 @@ team_away_data = team_data_per_year["2025"][away_team_name]
 team_home_data = [v for k,v in team_home_data.items()]
 team_away_data = [v for k,v in team_away_data.items()]
 
-data = [1,0]
+data = [1,0] # ignore
 data.extend(team_home_data)
 data.extend(team_away_data)
 
