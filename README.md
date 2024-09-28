@@ -17,7 +17,7 @@ This project is a tool for football analysts and enthusiats to gather data on fo
 #### In the prem_team_details.py file, this code is used to scrape team data and convert it into an object stored by stubs. The object is mapped like this: team_data_per_year["year"]["team"]["data_point] = ['data']. If the end of the current football year is beyond 2025 you can add more years to keep it up to date.
 ![prem_team_stats](./pictures/ppp3.png)
 ![prem_team_details](./pictures/ppp1.png)
-#### You can change what data points are used by, going to the site, grabbing the data-stat in the td tag of what data point you want to use editing the {'data-stat':'your_data_point'} with your data point and also changing the corresponding mapping below.
+#### You can change what data points are used by, going to the site, grabbing the data-stat in the td tag of what data point you want to use, and editing the {'data-stat':'your_data_point'} with your data point and also changing the corresponding mapping below.
 ![prem_team_stats](./pictures/ppp1.5.png)
 ![prem_team_stats](./pictures/ppp2.png)
 #### If you want to rescrape the data delete the data in the stubs folder but do not delete the folders inside of stubs.
